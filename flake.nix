@@ -9,6 +9,14 @@
   outputs = { self, nixpkgs, flake-utils, ... }: 
     flake-utils.lib.eachDefaultSystem (system:
       let
+        overlays = [
+          (final: prev: {
+            terraform = prev.terraform.withPlugins (plugins: [
+              plugins.libvirt
+            ]);
+          })
+        ];
+
         pkgs = import nixpkgs { 
           inherit system;
           config.allowUnfree = true;
