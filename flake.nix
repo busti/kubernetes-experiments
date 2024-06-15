@@ -11,10 +11,11 @@
       let
         pkgs = import nixpkgs { 
           inherit system;
+          config.allowUnfree = true;
         };
       in {
         devShells.default = pkgs.mkShell rec {
-          nativeBuildInputs = with nixpkgs; [
+          nativeBuildInputs = with pkgs; [
             terraform
           ];
         };
