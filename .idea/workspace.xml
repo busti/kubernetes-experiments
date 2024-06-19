@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c6503a-0f66-4b12-b900-a9ca51e2ce0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,9 @@
       <updated>1718460362331</updated>
       <workItem from="1718460363408" duration="425000" />
       <workItem from="1718460793735" duration="1880000" />
+      <workItem from="1718489347560" duration="599000" />
+      <workItem from="1718540227396" duration="826000" />
+      <workItem from="1718555799130" duration="1764000" />
     </task>
     <servers />
   </component>
