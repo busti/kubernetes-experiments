@@ -1,5 +1,23 @@
 {
   "nodes": {
+    "common": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1719949179,
+        "narHash": "sha256-ZNg/IbZJ+NCYGOfCnDigvBeAkVFy0gIL9r6N5Mebe8M=",
+        "ref": "refs/heads/main",
+        "rev": "77349208caeaccfaf47bd22226c7505ac4b4869f",
+        "revCount": 4,
+        "type": "git",
+        "url": "file:///home/busti/projects/os-common"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:///home/busti/projects/os-common"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -20,24 +38,41 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1718318537,
-        "narHash": "sha256-4Zu0RYRcAY/VWuu6awwq4opuiD//ahpc2aFHg2CWqFY=",
+        "lastModified": 1719707984,
+        "narHash": "sha256-RoxIr/fbndtuKqulGvNCcuzC6KdAib85Q8gXnjzA1dw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "e9ee548d90ff586a6471b4ae80ae9cfcbceb3420",
+        "rev": "7dca15289a1c2990efbe4680f0923ce14139b042",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-unstable",
+        "ref": "nixos-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1719838683,
+        "narHash": "sha256-Zw9rQjHz1ilNIimEXFeVa1ERNRBF8DoXDhLAZq5B4pE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "d032c1a6dfad4eedec7e35e91986becc699d7d69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-24.05",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
+        "common": "common",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "systems": {
