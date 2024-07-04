@@ -11,7 +11,6 @@ provider "libvirt" {
   uri = "qemu:///system"
 }
 
-
 resource "libvirt_network" "k8s" {
   name   = "k8s"
   mode   = "nat"
@@ -28,27 +27,31 @@ resource "libvirt_network" "k8s" {
     # XSLT (I have no idea what I'm doing),
     # because of https://github.com/dmacvicar/terraform-provider-libvirt/issues/794
     xslt = <<EOF
-<?xml version="1.0" ?>
-<xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:output omit-xml-declaration="yes" indent="yes"/>
-  <xsl:template match="node()|@*">
-     <xsl:copy>
-       <xsl:apply-templates select="node()|@*"/>
-     </xsl:copy>
-  </xsl:template>
+      <?xml version="1.0" ?>
+      <xsl:stylesheet version="1.0"
+                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output omit-xml-declaration="yes" indent="yes"/>
+        <xsl:template match="node()|@*">
+           <xsl:copy>
+             <xsl:apply-templates select="node()|@*"/>
+           </xsl:copy>
+        </xsl:template>
 
-  <xsl:template match="/network/ip/dhcp/range">
-    <xsl:copy>
-      <xsl:attribute name="start">10.240.0.100</xsl:attribute>
-      <xsl:apply-templates select="@*[not(local-name()='start')]|node()"/>
-    </xsl:copy>
-  </xsl:template>
-</xsl:stylesheet>
-EOF
+        <xsl:template match="/network/ip/dhcp/range">
+          <xsl:copy>
+            <xsl:attribute name="start">10.240.0.100</xsl:attribute>
+            <xsl:apply-templates select="@*[not(local-name()='start')]|node()"/>
+          </xsl:copy>
+        </xsl:template>
+      </xsl:stylesheet>
+    EOF
   }
 }
 
 resource "libvirt_domain" "terraform_test" {
   name = "terraform_test"
+  source = "result/nixos.qcow2"
+  provisioner "local-exec" {
+    command = "make-boot-image"
+  }
 }

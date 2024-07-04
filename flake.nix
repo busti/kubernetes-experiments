@@ -5,9 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
     common.url = "git+file:///home/busti/projects/os-common";
+    nixus.url = "github:infinisil/nixus";
   };
 
-  outputs = { self, nixpkgs, flake-utils, common, ... }:
+  outputs = { self, nixpkgs, flake-utils, common, nixus, ... }:
     # Config for the dev shell
     flake-utils.lib.eachDefaultSystem (system:
       let
@@ -25,7 +26,7 @@
         };
 
         make-boot-image = pkgs.writeShellScriptBin "make-boot-image" ''
-          nix build .#nixosConfigurations.etcd.config.system.build.qcow2
+          nix build .#nixosConfigurations.image.config.system.build.qcow2
         '';
       in {
         devShells.default = pkgs.mkShell rec {
@@ -38,7 +39,8 @@
     ) // {
       # individual host configurations
       nixosConfigurations = {
-        etcd = nixpkgs.lib.nixosSystem {
+        # lightweight base server-image
+        image = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             common.nixosModules.server
