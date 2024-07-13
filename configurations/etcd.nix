@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
   imports = [
-    ./modules/base.nix
+    ../modules/base.nix
   ];
 }

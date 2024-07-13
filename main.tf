@@ -15,7 +15,7 @@ resource "libvirt_network" "k8s" {
   name   = "k8s"
   mode   = "nat"
   domain = "k8s.local"
-  addresses = ["10.69.0.0/24"]
+  addresses = ["10.42.0.0/24"]
 
   dns {
     enabled = true
@@ -28,8 +28,7 @@ resource "libvirt_network" "k8s" {
     # because of https://github.com/dmacvicar/terraform-provider-libvirt/issues/794
     xslt = <<EOF
       <?xml version="1.0" ?>
-      <xsl:stylesheet version="1.0"
-                      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+      <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:output omit-xml-declaration="yes" indent="yes"/>
         <xsl:template match="node()|@*">
            <xsl:copy>
@@ -39,7 +38,7 @@ resource "libvirt_network" "k8s" {
 
         <xsl:template match="/network/ip/dhcp/range">
           <xsl:copy>
-            <xsl:attribute name="start">10.240.0.100</xsl:attribute>
+            <xsl:attribute name="start">10.42.0.100</xsl:attribute>
             <xsl:apply-templates select="@*[not(local-name()='start')]|node()"/>
           </xsl:copy>
         </xsl:template>
@@ -48,10 +47,26 @@ resource "libvirt_network" "k8s" {
   }
 }
 
-resource "libvirt_domain" "terraform_test" {
-  name = "terraform_test"
+resource "libvirt_volume" "boot" {
+  name = "boot"
   source = "result/nixos.qcow2"
-  provisioner "local-exec" {
-    command = "make-boot-image"
+}
+
+resource "libvirt_volume" "main" {
+  name           = "main"
+  base_volume_id = libvirt_volume.boot.id
+  size           = 10737418240
+}
+
+resource "libvirt_domain" "test" {
+  name = "test"
+  memory = 1024
+
+  disk {
+    volume_id = libvirt_volume.main.id
+  }
+
+  network_interface {
+    network_id = libvirt_network.k8s.id
   }
 }
