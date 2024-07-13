@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.05";
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    common.url = "git+file:///home/busti/Projects/os-common";
+    common.url = "git+file:///home/busti/projects/os-common";
     nixus.url = "github:infinisil/nixus";
   };
 

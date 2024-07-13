@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2c6503a-0f66-4b12-b900-a9ca51e2ce0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/flake.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/deploy.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/deploy.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
       <workItem from="1719866836887" duration="6894000" />
       <workItem from="1719939712424" duration="13321000" />
       <workItem from="1720045222633" duration="3758000" />
+      <workItem from="1720898873527" duration="1708000" />
     </task>
     <task id="LOCAL-00001" summary="define basic images">
       <option name="closed" value="true" />
@@ -93,7 +94,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719961532565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="merge">
+      <option name="closed" value="true" />
+      <created>1720896166537</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720896166537</updated>
+    </task>
+    <task id="LOCAL-00003" summary="wip">
+      <option name="closed" value="true" />
+      <created>1720896271594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720896271595</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="define basic images" />
-    <option name="LAST_COMMIT_MESSAGE" value="define basic images" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
 </project>
