@@ -47,9 +47,19 @@ resource "libvirt_network" "k8s" {
   }
 }
 
+resource "null_resource" "generate_boot" {
+  provisioner "local-exec" {
+    command = "make-boot-image"
+  }
+
+  triggers = {
+    qcow_image = fileexists("result/nixos.qcow2")
+  }
+}
+
 resource "libvirt_volume" "boot" {
   name = "boot"
-  source = "result/nixos.qcow2"
+  source = null_resource.generate_boot.triggers.qcow_image ? "result/nixos.qcow2" : ""
 }
 
 resource "libvirt_volume" "main" {

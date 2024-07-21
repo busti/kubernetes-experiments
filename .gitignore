@@ -1,2 +1,5 @@
-.terraform/
-.direnv/
+.terraform
+.direnv
+result
+terraform.tfstate
+terraform.tfstate.backup
