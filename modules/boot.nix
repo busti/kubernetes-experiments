@@ -13,4 +13,6 @@
   boot.kernelParams = [ "console=ttyS0" ];
   boot.loader.grub.device = "/dev/vda";
   boot.loader.timeout = 1;
+
+  services.cloud-init.enable = true;
 }

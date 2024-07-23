@@ -37,7 +37,7 @@
       in {
         devShells.default = pkgs.mkShell rec {
           nativeBuildInputs = with pkgs; [
-            terraform tf libxslt
+            terraform tf libxslt cdrtools
             make-boot-image
           ];
         };
@@ -88,7 +88,6 @@
         image = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            common.nixosModules.server
             ./configurations/image.nix
           ];
         };

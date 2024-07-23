@@ -47,6 +47,17 @@ resource "libvirt_network" "k8s" {
   }
 }
 
+resource "libvirt_cloudinit_disk" "commoninit" {
+  name = "commoninit.iso"
+    user_data = <<EOF
+      #cloud-config
+      users:
+      - name: nixos
+          ssh-authorized-keys:
+          - ${file("~/.ssh/id_ed25519.pub")}
+    EOF
+}
+
 resource "null_resource" "generate_boot" {
   provisioner "local-exec" {
     command = "make-boot-image"
@@ -79,4 +90,6 @@ resource "libvirt_domain" "test" {
   network_interface {
     network_id = libvirt_network.k8s.id
   }
+
+  cloudinit = libvirt_cloudinit_disk.commoninit.id
 }
