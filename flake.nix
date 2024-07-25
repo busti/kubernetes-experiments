@@ -26,9 +26,12 @@
           config.allowUnfree = true;
         };
 
-        tf = pkgs.writeShellScriptBin "tf" ''
-          #!${pkgs.bash}/bin/bash
-          exec ${pkgs.terraform}/bin/terraform "$@"
+        rebuild = pkgs.writeShellScriptBin "rebuild" ''
+          terraform destroy --auto-approve
+          terraform apply --auto-approve
+          until ssh -o StrictHostKeyChecking=no nixos@test.k8s.local; do
+            sleep 1
+          done
         '';
 
         make-boot-image = pkgs.writeShellScriptBin "make-boot-image" ''
@@ -37,8 +40,8 @@
       in {
         devShells.default = pkgs.mkShell rec {
           nativeBuildInputs = with pkgs; [
-            terraform tf libxslt cdrtools
-            make-boot-image
+            terraform libxslt cdrtools
+            rebuild make-boot-image
           ];
         };
 
