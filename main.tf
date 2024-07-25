@@ -58,6 +58,8 @@ users:
   - '${file("~/.ssh/id_ed25519.pub")}'
 runcmd:
   - echo '2' > /var/tmp/hello-world.txt
+hostname: test
+fqdn: test.k8s.local
 EOF
 }
 
