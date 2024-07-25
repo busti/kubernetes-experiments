@@ -50,12 +50,15 @@ resource "libvirt_network" "k8s" {
 resource "libvirt_cloudinit_disk" "commoninit" {
   name = "commoninit.iso"
     user_data = <<EOF
-      #cloud-config
-      users:
-      - name: nixos
-          ssh-authorized-keys:
-          - ${file("~/.ssh/id_ed25519.pub")}
-    EOF
+#cloud-config
+users:
+- name: 'nixos'
+  plain_text_passwd: 'changeme'
+  ssh_authorized_keys:
+  - '${file("~/.ssh/id_ed25519.pub")}'
+runcmd:
+  - echo '2' > /var/tmp/hello-world.txt
+EOF
 }
 
 resource "null_resource" "generate_boot" {

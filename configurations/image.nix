@@ -1,7 +1,10 @@
 { config, lib, pkgs, modulesPath, ... }: {
   imports = [
-    "${toString modulesPath}/profiles/qemu-guest.nix"
     ../modules/base.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    cloud-init
   ];
 
   system.build.qcow2 = import "${modulesPath}/../lib/make-disk-image.nix" {
@@ -17,6 +20,8 @@
     extraGroups = [ "wheel" ];
     initialPassword = "changeme";
   };
+
+  security.sudo.wheelNeedsPassword = false;
 
   services = {
     openssh = {
