@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/kubernetes-experiments.iml" filepath="$PROJECT_DIR$/.idea/kubernetes-experiments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../os-common/.idea/os-common.iml" filepath="$PROJECT_DIR$/../os-common/.idea/os-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../os-desktop/.idea/os-desktop.iml" filepath="$PROJECT_DIR$/../os-desktop/.idea/os-desktop.iml" />
     </modules>
   </component>
 </project>

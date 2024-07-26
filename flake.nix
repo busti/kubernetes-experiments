@@ -26,22 +26,28 @@
           config.allowUnfree = true;
         };
 
-        rebuild = pkgs.writeShellScriptBin "rebuild" ''
-          terraform destroy --auto-approve
-          terraform apply --auto-approve
+        make-boot-image = pkgs.writeShellScriptBin "make-boot-image" ''
+          nix build .#nixosConfigurations.image.config.system.build.qcow2
+        '';
+
+        connect = pkgs.writeShellScriptBin "connect" ''
           until ssh -o StrictHostKeyChecking=no nixos@test.k8s.local; do
             sleep 1
           done
         '';
 
-        make-boot-image = pkgs.writeShellScriptBin "make-boot-image" ''
-          nix build .#nixosConfigurations.image.config.system.build.qcow2
+        rebuild = pkgs.writeShellScriptBin "rebuild" ''
+          terraform destroy --auto-approve
+          terraform apply --auto-approve
+          connect
         '';
+
+
       in {
         devShells.default = pkgs.mkShell rec {
           nativeBuildInputs = with pkgs; [
             terraform libxslt cdrtools
-            rebuild make-boot-image
+            make-boot-image connect rebuild
           ];
         };
 
