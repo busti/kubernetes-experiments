@@ -31,7 +31,7 @@ resource "libvirt_cloudinit_disk" "commoninit" {
       plain_text_passwd: 'changeme'
       ssh_authorized_keys:
       - '${file("~/.ssh/id_ed25519.pub")}'
-    hostname: test
+    hostname: test.k8s.local
     fqdn: test.k8s.local
     power_state: # reboot to apply hostname
       mode: reboot
@@ -63,7 +63,7 @@ resource "libvirt_volume" "main" {
 }
 
 resource "libvirt_domain" "test" {
-  name = "test"
+  name = "test.k8s.local"
   memory = 1024
 
   disk {

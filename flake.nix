@@ -31,7 +31,7 @@
         '';
 
         connect = pkgs.writeShellScriptBin "connect" ''
-          until ssh -o StrictHostKeyChecking=no nixos@test.k8s.local; do
+          until ssh -o StrictHostKeyChecking=no nixos@test.k8s.host; do
             sleep 1
           done
         '';
