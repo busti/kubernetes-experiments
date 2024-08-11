@@ -39,9 +39,8 @@
         rebuild = pkgs.writeShellScriptBin "rebuild" ''
           terraform destroy --auto-approve
           terraform apply --auto-approve
-          connect
+          # connect
         '';
-
 
       in {
         devShells.default = pkgs.mkShell rec {

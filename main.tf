@@ -13,13 +13,7 @@ provider "libvirt" {
 
 resource "libvirt_network" "k8s" {
   name   = "k8s"
-  mode   = "nat"
-  domain = "k8s.local"
-  addresses = ["10.42.0.0/24", "fd00::1/64"]
-
-  dns {
-    enabled = true
-  }
+  mode   = "none"
 }
 
 resource "libvirt_cloudinit_disk" "commoninit" {
@@ -56,8 +50,14 @@ resource "libvirt_volume" "boot" {
   source = null_resource.generate_boot.triggers.qcow_image ? "result/nixos.qcow2" : ""
 }
 
-resource "libvirt_volume" "main" {
-  name           = "main"
+resource "libvirt_volume" "test" {
+  name           = "test"
+  base_volume_id = libvirt_volume.boot.id
+  size           = 10737418240
+}
+
+resource "libvirt_volume" "router" {
+  name           = "router"
   base_volume_id = libvirt_volume.boot.id
   size           = 10737418240
 }
@@ -67,7 +67,22 @@ resource "libvirt_domain" "test" {
   memory = 1024
 
   disk {
-    volume_id = libvirt_volume.main.id
+    volume_id = libvirt_volume.test.id
+  }
+
+  network_interface {
+    network_id = libvirt_network.k8s.id
+  }
+
+  cloudinit = libvirt_cloudinit_disk.commoninit.id
+}
+
+resource "libvirt_domain" "router" {
+  name = "router"
+  memory = 1024
+
+  disk {
+    volume_id = libvirt_volume.router.id
   }
 
   network_interface {
