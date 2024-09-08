@@ -15,5 +15,4 @@
   boot.loader.timeout = 1;
 
   services.qemuGuest.enable = true;
-  services.cloud-init.enable = true;
 }

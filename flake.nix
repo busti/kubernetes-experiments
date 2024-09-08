@@ -26,8 +26,12 @@
           config.allowUnfree = true;
         };
 
-        make-boot-image = pkgs.writeShellScriptBin "make-boot-image" ''
-          nix build .#nixosConfigurations.image.config.system.build.qcow2
+        make-default-image = pkgs.writeShellScriptBin "make-default-image" ''
+          nix build -o images/default .#nixosConfigurations.image_default.config.system.build.qcow2
+        '';
+
+        make-router-image = pkgs.writeShellScriptBin "make-router-image" ''
+          nix build -o images/router .#nixosConfigurations.image_router.config.system.build.qcow2
         '';
 
         connect = pkgs.writeShellScriptBin "connect" ''
@@ -46,7 +50,7 @@
         devShells.default = pkgs.mkShell rec {
           nativeBuildInputs = with pkgs; [
             terraform libxslt cdrtools
-            make-boot-image connect rebuild
+            make-default-image make-router-image connect rebuild
           ];
         };
 
@@ -75,7 +79,7 @@
                 host = "root@localhost";
                 configuration.imports = [
                   common.nixosModules.server
-                  ./configurations/etcd.nix
+                  ./configurations/default.nix
                 ];
               };
             };
@@ -93,10 +97,17 @@
       # individual host configurations
       nixosConfigurations = {
         # lightweight base server-image
-        image = nixpkgs.lib.nixosSystem {
+        image_default = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./configurations/image.nix
+            ./configurations/image_default.nix
+          ];
+        };
+
+        image_router = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./configurations/image_router.nix
           ];
         };
       };
