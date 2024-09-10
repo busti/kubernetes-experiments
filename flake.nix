@@ -47,7 +47,7 @@
         '';
 
       in {
-        devShells.default = pkgs.mkShell rec {
+        devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
             terraform libxslt cdrtools
             make-default-image make-router-image connect rebuild
