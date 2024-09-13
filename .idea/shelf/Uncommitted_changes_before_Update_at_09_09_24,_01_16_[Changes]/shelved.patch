@@ -1,0 +1,19 @@
+Index: ../os-common/modules/common.nix
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{ pkgs, ... }: {\n  users.users = {\n    busti = {\n      isNormalUser = true;\n      extraGroups = [ \"wheel\" ];\n      openssh.authorizedKeys.keys = [\n        \"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDfq8j4fnqv+EyarpWLzJTgOw/YIDhIM51JGdwu0soPa busti@styx\"\n      ];\n    };\n    root = {\n      hashedPassword = \"!\";\n    };\n  };\n\n  security.sudo.wheelNeedsPassword = false;\n\n  nix = {\n    settings.trusted-users = [ \"root\" \"@wheel\" \"@trusted\" \"build\" \"mbust\" \"busti\" ];\n    settings.experimental-features = [ \"nix-command\" \"flakes\" ];\n    gc = {\n      automatic = true;\n      dates = \"weekly\";\n      options = \"--delete-older-than 24d\";\n      persistent = true;\n      randomizedDelaySec = \"45min\";\n    };\n    #buildMachines = [{\n    #  hostName = \"builder\";\n    #  systems = [ \"x86_64-linux\" \"i686-linux\" ];\n    #  maxJobs = 32;\n    #  speedFactor = 2;\n    #  supportedFeatures = [ \"nixos-test\" \"benchmark\" \"big-parallel\" \"kvm\" ];\n    #  mandatoryFeatures = [ ];\n    #}];\n    distributedBuilds = true;\n    extraOptions = ''\n      builders-use-substitutes = true\n      min-free = ${toString (5 * 1024 * 1024 * 1024)}\n      max-free = ${toString (10 * 1024 * 1024 * 1024)}\n    '';\n  };\n\n  nixpkgs.config.allowUnfree = true;\n\n  programs.mtr.enable = true;\n\n  services = {\n    openssh = {\n      enable = true;\n      settings = {\n        PasswordAuthentication = false;\n        KbdInteractiveAuthentication = false;\n        PermitRootLogin = \"prohibit-password\";\n      };\n      openFirewall = false;\n    };\n  };\n\n  environment.systemPackages = with pkgs; [\n    git ripgrep htop vim tmux jq bat eza git gh\n    rsync wget curl tcpdump dig\n    pciutils inetutils pkg-config bintools-unwrapped\n    bitwarden-cli wireguard-tools\n    nix-index\n    bison flex fontforge makeWrapper pkg-config gnumake gcc libiconv autoconf automake libtool ncurses.dev ncurses5.dev ncurses6.dev\n    unrar p7zip zip unzip\n  ];\n\n  programs.bash.shellAliases = {\n    \"..\" = \"cd ..\";\n    use = \"nix-shell -p\";\n    cat = \"bat --style=header\";\n    grep = \"rg\";\n    ls = \"eza\";\n    ll = \"eza -l\";\n    la = \"eza -lagh --octal-permissions\";\n    tree = \"eza -T\";\n  };\n\n  networking.firewall.interfaces.wg0.allowedTCPPorts = [ 9091 ];\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../os-common/modules/common.nix b/../os-common/modules/common.nix
+--- a/../os-common/modules/common.nix	(revision 5fa8de475b964d7e280c188f7b77464639827d06)
++++ b/../os-common/modules/common.nix	(date 1725834463923)
+@@ -58,7 +58,7 @@
+ 
+   environment.systemPackages = with pkgs; [
+     git ripgrep htop vim tmux jq bat eza git gh
+-    rsync wget curl tcpdump dig
++    rsync wget curl tcpdump dig nmap
+     pciutils inetutils pkg-config bintools-unwrapped
+     bitwarden-cli wireguard-tools
+     nix-index

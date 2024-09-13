@@ -1,0 +1,73 @@
+Index: ../os-desktop/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../os-desktop/.idea/modules.xml b/../os-desktop/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1713999888189)
++++ b/../os-desktop/.idea/modules.xml	(date 1713999888189)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/os-desktop.iml" filepath="$PROJECT_DIR$/.idea/os-desktop.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../os-desktop/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../os-desktop/.idea/.gitignore b/../os-desktop/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1713999888244)
++++ b/../os-desktop/.idea/.gitignore	(date 1713999888244)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: ../os-desktop/.idea/os-desktop.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../os-desktop/.idea/os-desktop.iml b/../os-desktop/.idea/os-desktop.iml
+new file mode 100644
+--- /dev/null	(date 1722037028093)
++++ b/../os-desktop/.idea/os-desktop.iml	(date 1722037028093)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="EMPTY_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../os-desktop/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../os-desktop/.idea/vcs.xml b/../os-desktop/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1713999888196)
++++ b/../os-desktop/.idea/vcs.xml	(date 1713999888196)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
