@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/answer.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/prepare-image.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kubernetes-experiments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kubernetes-experiments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/.idea/os-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/.idea/os-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/.idea/os-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.idea/os-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/main.tf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jkzV2T8agyEa9lmc9EOlMQrJKZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.test.sh.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/busti/projects/os-server/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../os-server/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../os-server/test/images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="" />
+      <created>1721945882596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721945882596</updated>
+      <workItem from="1721945883599" duration="1115000" />
+      <workItem from="1721992512134" duration="385000" />
+      <workItem from="1722034187536" duration="3280000" />
+      <workItem from="1722076865332" duration="1197000" />
+      <workItem from="1722182000007" duration="1671000" />
+      <workItem from="1722200800466" duration="4192000" />
+      <workItem from="1722366785280" duration="11843000" />
+      <workItem from="1722429926369" duration="5391000" />
+      <workItem from="1722475994088" duration="2866000" />
+      <workItem from="1722508489006" duration="9462000" />
+      <workItem from="1722550557601" duration="8691000" />
+      <workItem from="1722600506465" duration="2858000" />
+      <workItem from="1722639068860" duration="5614000" />
+      <workItem from="1722789192006" duration="21291000" />
+      <workItem from="1722880047067" duration="1765000" />
+      <workItem from="1722892804085" duration="4774000" />
+      <workItem from="1722979268987" duration="2848000" />
+      <workItem from="1723149897897" duration="2006000" />
+      <workItem from="1723294279988" duration="2156000" />
+      <workItem from="1723993811778" duration="11849000" />
+      <workItem from="1724095718473" duration="4907000" />
+      <workItem from="1724163232918" duration="5068000" />
+      <workItem from="1725831518421" duration="4436000" />
+      <workItem from="1725914330726" duration="1266000" />
+      <workItem from="1725996863890" duration="11450000" />
+      <workItem from="1726162037860" duration="326000" />
+      <workItem from="1726255964308" duration="108000" />
+      <workItem from="1726256076574" duration="10922000" />
+    </task>
+    <task id="LOCAL-00001" summary="wip">
+      <option name="closed" value="true" />
+      <created>1722037055163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037055163</updated>
+    </task>
+    <task id="LOCAL-00002" summary="wip">
+      <option name="closed" value="true" />
+      <created>1722037358597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037358597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="attempt to fix localdns querying ipv6 too often">
+      <option name="closed" value="true" />
+      <created>1722184868383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722184868383</updated>
+    </task>
+    <task id="LOCAL-00004" summary="wip">
+      <option name="closed" value="true" />
+      <created>1725831937006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725831937006</updated>
+    </task>
+    <task id="LOCAL-00005" summary="wip">
+      <option name="closed" value="true" />
+      <created>1725915131302</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725915131302</updated>
+    </task>
+    <task id="LOCAL-00006" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726007972237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726007972237</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:tailwindcss" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:vite" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:webpack" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:karma" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:graphql" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:tslint" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:prettier" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:pug" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:@angular/core" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:vue" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:next" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:postcss" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="attempt to fix localdns querying ipv6 too often" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+  </component>
+</project>
