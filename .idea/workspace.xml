@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/test/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/test/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/deploy.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/deploy.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-common" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-desktop" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -30,28 +27,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "NIXITCH_NIXPKGS_CONFIG": "/etc/nix/nixpkgs-config.nix",
-    "NIXITCH_NIX_CONF_DIR": "",
-    "NIXITCH_NIX_OTHER_STORES": "",
-    "NIXITCH_NIX_PATH": "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos:nixos-config=/etc/nixos/configuration.nix:/nix/var/nix/profiles/per-user/root/channels",
-    "NIXITCH_NIX_PROFILES": "",
-    "NIXITCH_NIX_REMOTE": "",
-    "NIXITCH_NIX_USER_PROFILE_DIR": "/nix/var/nix/profiles/per-user/busti",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.test.sh.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/busti/projects/os-server/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;NIXITCH_NIXPKGS_CONFIG&quot;: &quot;/etc/nix/nixpkgs-config.nix&quot;,
+    &quot;NIXITCH_NIX_CONF_DIR&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_OTHER_STORES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PATH&quot;: &quot;nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos:nixos-config=/etc/nixos/configuration.nix:/nix/var/nix/profiles/per-user/root/channels&quot;,
+    &quot;NIXITCH_NIX_PROFILES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_REMOTE&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;/nix/var/nix/profiles/per-user/busti&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.test.sh.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/busti/projects/os-server/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../os-server/test" />
@@ -129,7 +126,7 @@
       <workItem from="1726256076574" duration="11855000" />
       <workItem from="1726319716272" duration="2971000" />
       <workItem from="1726342559461" duration="1118000" />
-      <workItem from="1726343683693" duration="6477000" />
+      <workItem from="1726343683693" duration="6796000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -195,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726267763354</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726352505716</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726352505716</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
