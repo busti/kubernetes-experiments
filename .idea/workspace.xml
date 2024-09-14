@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/answer.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/prepare-image.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kubernetes-experiments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kubernetes-experiments.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/.idea/os-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/.idea/os-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/.idea/os-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.idea/os-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/test/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-common" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -37,6 +32,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "NIXITCH_NIXPKGS_CONFIG": "/etc/nix/nixpkgs-config.nix",
+    "NIXITCH_NIX_CONF_DIR": "",
+    "NIXITCH_NIX_OTHER_STORES": "",
+    "NIXITCH_NIX_PATH": "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos:nixos-config=/etc/nixos/configuration.nix:/nix/var/nix/profiles/per-user/root/channels",
+    "NIXITCH_NIX_PROFILES": "",
+    "NIXITCH_NIX_REMOTE": "",
+    "NIXITCH_NIX_USER_PROFILE_DIR": "/nix/var/nix/profiles/per-user/busti",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Shell Script.test.sh.executor": "Debug",
     "git-widget-placeholder": "main",
@@ -57,6 +59,30 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../os-server/test/images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Plan directory os-server" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envFilePaths">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$/../os-server" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Terraform.Plan directory os-server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,7 +126,10 @@
       <workItem from="1725996863890" duration="11450000" />
       <workItem from="1726162037860" duration="326000" />
       <workItem from="1726255964308" duration="108000" />
-      <workItem from="1726256076574" duration="10922000" />
+      <workItem from="1726256076574" duration="11855000" />
+      <workItem from="1726319716272" duration="2971000" />
+      <workItem from="1726342559461" duration="1118000" />
+      <workItem from="1726343683693" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -150,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726007972237</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726267722524</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726267722524</updated>
+    </task>
+    <task id="LOCAL-00008" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726267763354</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726267763354</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
