@@ -9,7 +9,7 @@
     nixus.url = "github:infinisil/nixus";
   };
 
-  outputs = { self, nixpkgs, unstable, flake-utils, common, nixus, ... }:
+  outputs = inputs @ { self, nixpkgs, unstable, flake-utils, common, nixus, ... }:
     # Config for the dev shell
     flake-utils.lib.eachDefaultSystem (system:
       let
@@ -99,6 +99,7 @@
         # lightweight base server-image
         image_default = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs };
           modules = [
             ./configurations/image_default.nix
           ];
@@ -106,6 +107,7 @@
 
         image_router = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs };
           modules = [
             ./configurations/image_router.nix
           ];

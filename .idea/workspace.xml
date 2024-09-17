@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../os-desktop/deploy.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/deploy.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-common/modules/image.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_24,_22_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_24__22_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/base.nix" beforeDir="false" afterPath="$PROJECT_DIR$/modules/base.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/boot.nix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/image.nix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/server.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/server.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +29,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-desktop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -38,6 +56,7 @@
     &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;/nix/var/nix/profiles/per-user/busti&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Shell Script.test.sh.executor&quot;: &quot;Debug&quot;,
+    &quot;Terraform.Plan directory os-server.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/busti/projects/os-server/test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -54,6 +73,7 @@
       <recent name="$PROJECT_DIR$/../os-server/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../os-common/configurations" />
       <recent name="$PROJECT_DIR$/../os-server/test/images" />
     </key>
   </component>
@@ -75,16 +95,11 @@
       <option name="workingDirectory" value="$PROJECT_DIR$/../os-server" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Terraform.Plan directory os-server" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-702c07f07bed-JavaScript-WS-243.12818.48" />
       </set>
     </attachedChunks>
   </component>
@@ -127,6 +142,11 @@
       <workItem from="1726319716272" duration="2971000" />
       <workItem from="1726342559461" duration="1118000" />
       <workItem from="1726343683693" duration="6796000" />
+      <workItem from="1726352737481" duration="3547000" />
+      <workItem from="1726356311576" duration="29000" />
+      <workItem from="1726397218732" duration="980000" />
+      <workItem from="1726421037799" duration="1081000" />
+      <workItem from="1726596187299" duration="11487000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -200,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726352505716</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726352739935</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726352739935</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
