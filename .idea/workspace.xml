@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-common/modules/image.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_24,_22_40_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_24__22_40__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/base.nix" beforeDir="false" afterPath="$PROJECT_DIR$/modules/base.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/boot.nix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/image.nix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/server.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/server.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-common" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -146,7 +130,7 @@
       <workItem from="1726356311576" duration="29000" />
       <workItem from="1726397218732" duration="980000" />
       <workItem from="1726421037799" duration="1081000" />
-      <workItem from="1726596187299" duration="11487000" />
+      <workItem from="1726596187299" duration="11856000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -228,7 +212,31 @@
       <option name="project" value="LOCAL" />
       <updated>1726352739935</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726611177665</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726611177665</updated>
+    </task>
+    <task id="LOCAL-00012" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726611204194</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726611204194</updated>
+    </task>
+    <task id="LOCAL-00013" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726611220570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726611220570</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
