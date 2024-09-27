@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../os-desktop/unstable-overlay.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/packages/proxmox-auto-install-assistant.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_24,_21_35_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_24__21_35__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/common.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/common.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/desktop.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/desktop.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/fingerprint.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/fingerprint.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/image.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/image.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/modules/server.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/server.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/book/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/book/configuration.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/hans/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/hans/configuration.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/styx/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/styx/configuration.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +152,11 @@
       <workItem from="1726356311576" duration="29000" />
       <workItem from="1726397218732" duration="980000" />
       <workItem from="1726421037799" duration="1081000" />
-      <workItem from="1726596187299" duration="11856000" />
+      <workItem from="1726596187299" duration="13571000" />
+      <workItem from="1726944265867" duration="996000" />
+      <workItem from="1727217361648" duration="3297000" />
+      <workItem from="1727285580224" duration="9462000" />
+      <workItem from="1727373458447" duration="13683000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
@@ -236,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726611220570</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="wip">
+      <option name="closed" value="true" />
+      <created>1726611430111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726611430111</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
