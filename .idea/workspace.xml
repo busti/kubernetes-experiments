@@ -5,29 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../os-desktop/unstable-overlay.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/packages/proxmox-auto-install-assistant.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_24,_21_35_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_09_24__21_35__Changes_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-common/modules/treefmt.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/proxmox_images.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../os-server/test/scripts/prepare-proxmox-image.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-common/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-common/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/cloudinit.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/common.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/common.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-common/modules/desktop.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/desktop.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/fingerprint.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/fingerprint.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/image.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/image.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/qemu-guest.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/server.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/server.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/book/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/book/configuration.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/hans/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/hans/configuration.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-desktop/nodes/styx/configuration.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/nodes/styx/configuration.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/configurations/ostemplate.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-common" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -64,7 +55,7 @@
     &quot;Shell Script.test.sh.executor&quot;: &quot;Debug&quot;,
     &quot;Terraform.Plan directory os-server.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/busti/projects/os-server/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/busti/projects/os-server/test/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../os-server/test/images" />
       <recent name="$PROJECT_DIR$/../os-server/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -157,6 +149,15 @@
       <workItem from="1727217361648" duration="3297000" />
       <workItem from="1727285580224" duration="9462000" />
       <workItem from="1727373458447" duration="13683000" />
+      <workItem from="1727514640313" duration="2513000" />
+      <workItem from="1727524212246" duration="3867000" />
+      <workItem from="1727546887960" duration="1276000" />
+      <workItem from="1727629490978" duration="10845000" />
+      <workItem from="1727726625533" duration="6663000" />
+      <workItem from="1727798373516" duration="820000" />
+      <workItem from="1727811832057" duration="5100000" />
+      <workItem from="1727949765488" duration="3201000" />
+      <workItem from="1727961267822" duration="21064000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
