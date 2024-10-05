@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../os-common/modules/treefmt.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/proxmox_images.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../os-server/test/scripts/prepare-proxmox-image.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/configurations/ostemplate.nix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-common/modules/desktop.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-common/modules/desktop.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/test/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../os-server/test/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +146,8 @@
       <workItem from="1727811832057" duration="5100000" />
       <workItem from="1727949765488" duration="3201000" />
       <workItem from="1727961267822" duration="21064000" />
+      <workItem from="1728084371986" duration="506000" />
+      <workItem from="1728085211411" duration="9237000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
