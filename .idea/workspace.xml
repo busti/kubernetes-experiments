@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4edc7e16-d045-4337-bbbc-c73844bc8b31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../os-server/test/scripts/download-proxmox-image.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-desktop/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../os-desktop/flake.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/provider.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/proxmox_in_libvirt.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/scripts/download-proxmox-image.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/scripts/download-proxmox-image.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../os-server/test/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../os-server/test/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-server" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../os-desktop" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -164,6 +168,12 @@
       <workItem from="1728652458174" duration="11008000" />
       <workItem from="1728688235215" duration="1625000" />
       <workItem from="1728733999287" duration="2092000" />
+      <workItem from="1728763379032" duration="3705000" />
+      <workItem from="1728773521613" duration="4512000" />
+      <workItem from="1728826732374" duration="10083000" />
+      <workItem from="1728931351102" duration="7008000" />
+      <workItem from="1729018844992" duration="1261000" />
+      <workItem from="1729022059352" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <option name="closed" value="true" />
